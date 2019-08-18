@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    package="com.example.lyrio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/lyr_new_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/lyr_new_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ConfiguracoesActivity"></activity>
+        <activity android:name=".NoticiaActivity" />
+        <activity android:name=".PaginaArtistaActivity" />
+        <activity android:name=".ListaNoticiaSalvaActivity" />
+        <activity android:name=".ListaArtistasSalvosActivity" />
+        <activity android:name=".ListaMusicaSalvaActivity" />
+        <activity android:name=".ListaAlbumActivity" />
+        <activity android:name=".VagalumeAbrirLink" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".TabMenu" />
+        <activity android:name=".TelaLetras" />
+        <activity android:name=".login.UserEsqueciMinhaSenha" />
+        <activity android:name=".login.UserCadastroActivity" />
+        <activity android:name=".login.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

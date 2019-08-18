@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".TabMenu"
+    android:background="@drawable/bg_normal">
+
+    <!--DESATIVAR MENU DO TOPO-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/artista_button_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/azulBotoes"-->
+            <!--android:fontFamily="@font/bree_serif_regular"-->
+            <!--android:text="Artista_old"-->
+            <!--android:textColor="@color/branco" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/musica_button_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/azulBotoes"-->
+            <!--android:fontFamily="@font/bree_serif_regular"-->
+            <!--android:text="Música"-->
+            <!--android:textColor="@color/branco" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/playlist_button_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/azulBotoes"-->
+            <!--android:fontFamily="@font/bree_serif_regular"-->
+            <!--android:text="Playlist"-->
+            <!--android:textColor="@color/branco" />-->
+
+    <!--</LinearLayout>-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:paddingTop="8dp"
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewpager_id">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#0000"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/tabIndicadorColor"
+        app:tabIndicatorHeight="5dp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/tab_text_font"
+        app:tabTextColor="@color/tabTxtColor">
+
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>
